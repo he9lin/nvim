@@ -26,6 +26,8 @@ else
   " inoremap <c-u> <ESC>viwUi
   " nnoremap <c-u> viwU<Esc>
 
+  " New TAB
+  nnoremap <Leader>t :tabnew<CR>
   " TAB in general mode will move to text buffer
   nnoremap <TAB> :bnext<CR>
   " SHIFT-TAB will go back
