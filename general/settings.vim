@@ -35,8 +35,6 @@ if !exists('g:vscode')
   set timeoutlen=100                      " By default timeoutlen is 1000 ms
   set clipboard=unnamedplus               " Copy paste between vim and everything else
   set incsearch
-  set relativenumber
-  " set guifont=Hack\ Nerd\ Font
   " let $NVIM_TUI_ENABLE_TRUE_COLOR=1
   " set mmp=1300
   " set autochdir                           " Your working directory will always be the same as your working directory
@@ -45,6 +43,11 @@ if !exists('g:vscode')
   " au! BufWritePost $MYVIMRC source %      " auto source when writing to init.vm alternatively you can run :source $MYVIMRC
   autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 
+  au BufWritePre * :%s/\s\+$//e " Clean up white spaces
+  au VimResized * :wincmd =
+  au BufEnter * set relativenumber
+  au InsertEnter * :set number
+  au InsertLeave * :set relativenumber"
 
   " You can't stop me
   cmap w!! w !sudo tee %

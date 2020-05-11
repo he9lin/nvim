@@ -41,7 +41,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'sheerun/vim-polyglot'
     " Cool Icons
     Plug 'ryanoasis/vim-devicons'
-    " Auto pairs for '(' '[' '{' 
+    " Auto pairs for '(' '[' '{'
     Plug 'jiangmiao/auto-pairs'
     " Closetags
     Plug 'alvan/vim-closetag'
@@ -92,6 +92,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Plug 'Shougo/echodoc.vim'
     Plug 'MattesGroeger/vim-bookmarks'
     Plug 'Yggdroot/indentLine'
+    Plug 'benmills/vimux'
+
+    Plug 'elixir-editors/vim-elixir'
   endif
 
 

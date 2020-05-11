@@ -4,10 +4,10 @@
   // "suggest.echodocSupport": true,
 
   // diagnostics
-  "diagnostic.errorSign": "✗",
+  "diagnostic.errorSign": "🚩",
   "diagnostic.warningSign": "⚠",
-  "diagnostic.infoSign": "",
-  "diagnostic.hintSign": " ",
+  "diagnostic.infoSign": "💡",
+  "diagnostic.hintSign": "💰",
   // "diagnostic.displayByAle": true,
 
   // codelens TODO what does this get me?
@@ -20,13 +20,14 @@
   // autoformat
   "coc.preferences.formatOnSaveFiletypes": ["css", "markdown", "javascript", "graphql", "html", "yaml",  "json", "python"],
   "coc.preferences.hoverTarget": "float",
+  "coc.preferences.jumpCommand": "edit",
 
   // python config
   "python.linting.enabled": true,
   "python.linting.pylintEnabled": true,
 
   // snippets
-  "snippets.ultisnips.directories": 
+  "snippets.ultisnips.directories":
   [
     "UltiSnips",
     "~/.config/nvim/utils/snips"

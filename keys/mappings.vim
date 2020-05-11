@@ -42,8 +42,9 @@ else
   " <TAB>: completion.
   inoremap <expr><TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
 
-  nnoremap <silent> <C-l> :nohl<CR>
+  nnoremap <silent> <Leader>- :nohlsearch<CR>
   nnoremap <C-n> :NumberToggle<CR>
+  nnoremap <silent> <Leader>w :call CocActionAsync('jumpDefinition')<CR>
 
   " Better window navigation
   nnoremap <C-h> <C-w>h
@@ -59,7 +60,7 @@ else
 
   " Bookmarks
   nnoremap <S-b> :BookmarkToggle<CR>
-  nnoremap <S-a> :BookmarkShowAll<CR>
+  nnoremap <S-u> :BookmarkShowAll<CR>
   nnoremap <S-n> :BookmarkNext<CR>
 endif
 
