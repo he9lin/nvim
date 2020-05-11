@@ -40,9 +40,10 @@
   "explorer.keyMappings": {
     "<cr>": ["expandable?", "expand", "open"],
     "v": "open:vsplit"
-  }
+  },
 
   // TODO language servers
+  "elixir.pathToElixirLS": "~/.elixir-ls/release/language_server.sh"
   // TODO g:coc_global_extensions
   // TODO b:coc_suggest_disable=1 GOYO
   // TODO add to paths.vim g:coc_node_path
