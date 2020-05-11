@@ -49,6 +49,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'christianchiarulli/onedark.vim'
     Plug 'kaicataldo/material.vim'
     Plug 'NLKNguyen/papercolor-theme'
+    Plug 'rakr/vim-two-firewatch'
     " Intellisense
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
     Plug 'amiralies/coc-elixir', {'do': 'yarn install --frozen-lockfile && yarn run build'}
