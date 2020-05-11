@@ -50,9 +50,12 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'kaicataldo/material.vim'
     Plug 'NLKNguyen/papercolor-theme'
     Plug 'rakr/vim-two-firewatch'
+    Plug 'dracula/vim', { 'as': 'dracula'  }
+    Plug 'morhetz/gruvbox'
+    Plug 'ayu-theme/ayu-vim'
+    Plug 'drewtempelmeyer/palenight.vim'
     " Intellisense
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
-    Plug 'amiralies/coc-elixir', {'do': 'yarn install --frozen-lockfile && yarn run build'}
     " Status Line
     Plug 'vim-airline/vim-airline'
     Plug 'vim-airline/vim-airline-themes'
@@ -87,6 +90,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'jbgutierrez/vim-better-comments'
     " Echo doc
     " Plug 'Shougo/echodoc.vim'
+    Plug 'MattesGroeger/vim-bookmarks'
+    Plug 'Yggdroot/indentLine'
   endif
 
 

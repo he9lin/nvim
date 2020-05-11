@@ -42,6 +42,8 @@ else
   " <TAB>: completion.
   inoremap <expr><TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
 
+  nnoremap <silent> <C-l> :nohl<CR>
+  nnoremap <C-n> :NumberToggle<CR>
 
   " Better window navigation
   nnoremap <C-h> <C-w>h
@@ -50,9 +52,14 @@ else
   nnoremap <C-l> <C-w>l
 
   " Use alt + hjkl to resize windows
-  nnoremap <M-j>    :resize -2<CR>
-  nnoremap <M-k>    :resize +2<CR>
-  nnoremap <M-h>    :vertical resize -2<CR>
-  nnoremap <M-l>    :vertical resize +2<CR>
+  nnoremap <M-j> :resize -2<CR>
+  nnoremap <M-k> :resize +2<CR>
+  nnoremap <M-h> :vertical resize -2<CR>
+  nnoremap <M-l> :vertical resize +2<CR>
+
+  " Bookmarks
+  nnoremap <S-b> :BookmarkToggle<CR>
+  nnoremap <S-a> :BookmarkShowAll<CR>
+  nnoremap <S-n> :BookmarkNext<CR>
 endif
 
