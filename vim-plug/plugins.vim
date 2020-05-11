@@ -51,6 +51,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'NLKNguyen/papercolor-theme'
     " Intellisense
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
+    Plug 'amiralies/coc-elixir', {'do': 'yarn install --frozen-lockfile && yarn run build'}
     " Status Line
     Plug 'vim-airline/vim-airline'
     Plug 'vim-airline/vim-airline-themes'
