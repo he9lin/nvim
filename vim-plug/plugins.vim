@@ -54,6 +54,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'morhetz/gruvbox'
     Plug 'ayu-theme/ayu-vim'
     Plug 'drewtempelmeyer/palenight.vim'
+    Plug 'mhartington/oceanic-next'
+    Plug 'arcticicestudio/nord-vim'
     " Intellisense
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
     " Status Line
