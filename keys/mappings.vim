@@ -27,7 +27,7 @@ else
   " nnoremap <c-u> viwU<Esc>
 
   " New TAB
-  nnoremap <Leader>t :tabnew<CR>
+  nnoremap <C-t> :tabnew<CR>
   " TAB in general mode will move to text buffer
   nnoremap <TAB> :bnext<CR>
   " SHIFT-TAB will go back
@@ -42,8 +42,6 @@ else
   " <TAB>: completion.
   inoremap <expr><TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
 
-  nnoremap <silent> <Leader>- :nohlsearch<CR>
-  nnoremap <C-n> :NumberToggle<CR>
   nnoremap <silent> <Leader>w :call CocActionAsync('jumpDefinition')<CR>
 
   " Better window navigation

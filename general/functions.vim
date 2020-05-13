@@ -3,15 +3,6 @@ augroup auto_spellcheck
   autocmd BufNewFile,BufRead *.md setlocal spell
 augroup END
 
-function! NumberToggle()
-  if(&relativenumber == 1)
-    set number
-  else
-    set relativenumber
-  endif
-endfunc
-command! NumberToggle call NumberToggle()
-
 " Elixir mapping
 au FileType elixir call FileType_Elixir()
 function! FileType_Elixir()
