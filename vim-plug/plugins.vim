@@ -81,6 +81,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'tpope/vim-fugitive'
     Plug 'tpope/vim-rhubarb'
     Plug 'junegunn/gv.vim'
+    Plug 'kdheepak/lazygit.vim', { 'branch': 'nvim-v0.4.3'  }
     " Terminal
     Plug 'voldikss/vim-floaterm'
     " Start Screen
