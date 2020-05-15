@@ -36,7 +36,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Plug 'easymotion/vim-easymotion'
     " Add some color
     Plug 'norcalli/nvim-colorizer.lua'
-    Plug 'junegunn/rainbow_parentheses.vim'
+    Plug 'luochen1990/rainbow'
     " Better Syntax Support
     Plug 'sheerun/vim-polyglot'
     " Cool Icons
@@ -56,6 +56,13 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'drewtempelmeyer/palenight.vim'
     Plug 'mhartington/oceanic-next'
     Plug 'arcticicestudio/nord-vim'
+    Plug 'romainl/Apprentice'
+    Plug 'ajmwagar/vim-deus'
+    Plug 'danilo-augusto/vim-afterglow'
+    Plug 'junegunn/seoul256.vim'
+    Plug 'lifepillar/vim-solarized8'
+    Plug 'AlessandroYorba/Sierra'
+    Plug 'sonph/onehalf'
     " Intellisense
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
     " Status Line

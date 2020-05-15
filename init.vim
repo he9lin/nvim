@@ -27,6 +27,8 @@ else
   source $HOME/.config/nvim/themes/gruvbox.vim
   source $HOME/.config/nvim/themes/ayu.vim
   source $HOME/.config/nvim/themes/oceanic_next.vim
+  source $HOME/.config/nvim/themes/seoul256.vim
+  source $HOME/.config/nvim/themes/sierra.vim
   source $HOME/.config/nvim/plug-config/ranger.vim
   source $HOME/.config/nvim/plug-config/fzf.vim
   source $HOME/.config/nvim/plug-config/nerd-commenter.vim
