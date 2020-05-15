@@ -1,5 +1,4 @@
 {
-
   // suggestions
   // "suggest.echodocSupport": true,
 
@@ -43,8 +42,33 @@
     "v": "open:vsplit"
   },
 
-  // TODO language servers
-  "elixir.pathToElixirLS": "~/.elixir-ls/release/language_server.sh"
+  // language servers
+  "codeLens.enable": true,
+  "languageserver": {
+    "elixirLS": {
+      "command": "~/.elixir-ls/release/language_server.sh",
+      "filetypes": ["elixir", "eelixir"]
+    },
+    "haskell": {
+      "command": "hie-wrapper",
+      "args": ["--lsp"],
+      "rootPatterns": [
+        "stack.yaml",
+        "cabal.config",
+        "package.yaml"
+      ],
+      "filetypes": [
+        "hs",
+        "lhs",
+        "haskell"
+      ],
+      "initializationOptions": {
+        "languageServerHaskell": {
+          "hlintOn": true
+        }
+      }
+    }
+  }
   // TODO g:coc_global_extensions
   // TODO b:coc_suggest_disable=1 GOYO
   // TODO add to paths.vim g:coc_node_path

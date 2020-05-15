@@ -104,6 +104,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'benmills/vimux'
 
     Plug 'elixir-editors/vim-elixir'
+    Plug 'neovimhaskell/haskell-vim'
   endif
 
 
