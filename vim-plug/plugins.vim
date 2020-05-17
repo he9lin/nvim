@@ -46,7 +46,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Closetags
     Plug 'alvan/vim-closetag'
     " Themes
-    Plug 'christianchiarulli/onedark.vim'
+    Plug 'joshdick/onedark.vim'
     Plug 'kaicataldo/material.vim'
     Plug 'NLKNguyen/papercolor-theme'
     Plug 'rakr/vim-two-firewatch'
@@ -63,6 +63,12 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'lifepillar/vim-solarized8'
     Plug 'AlessandroYorba/Sierra'
     Plug 'sonph/onehalf'
+    Plug 'srcery-colors/srcery-vim'
+    Plug 'Nequo/vim-allomancer'
+    Plug 'victorze/foo'
+    Plug 'kjssad/quantum.vim'
+    Plug 'Lokaltog/vim-monotone'
+    Plug 'Mizux/vim-colorschemes'
     " Intellisense
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
     " Status Line

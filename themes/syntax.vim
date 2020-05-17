@@ -6,3 +6,11 @@ aug i3config_ft_detection
   au!
   au BufNewFile,BufRead ~/.config/i3/config set filetype=i3config
 aug end
+
+syntax on
+
+if (has('termguicolors'))
+  set termguicolors
+  hi LineNr ctermbg=NONE guibg=NONE
+endif
+
