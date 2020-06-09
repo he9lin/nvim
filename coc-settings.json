@@ -44,6 +44,7 @@
 
   // language servers
   "codeLens.enable": true,
+  "fsharp.codelens.references": false,
   "languageserver": {
     "elixirLS": {
       "command": "~/.elixir-ls/release/language_server.sh",

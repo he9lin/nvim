@@ -47,3 +47,16 @@ else
   luafile $HOME/.config/nvim/lua/plug-colorizer.lua
   " source $HOME/.config/nvim/plug-config/easymotion.vim
 endif
+
+function FSharpFormat()
+  " %!dotnet fantomas %:p --stdout --spaceBeforeColon --indent 2 --pageWidth 80
+  let cmd = "%!dotnet fantomas " . bufname("%") . " --stdout --spaceBeforeColon --indent 2 --pageWidth 80"
+  execute cmd
+endfunction
+
+au FileType fsharp call FileType_FSharp()
+function! FileType_FSharp()
+  if exists("b:did_ftfsharp") | return | endif
+  let b:did_ftfsharp = 1
+  nnoremap <silent> <Leader>p :call FSharpFormat()<CR>
+endfunction

@@ -2,7 +2,6 @@
 if empty(glob('~/.config/nvim/autoload/plug.vim'))
   silent !curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs
     \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-  "autocmd VimEnter * PlugInstall
   autocmd VimEnter * PlugInstall | source $MYVIMRC
 endif
 
@@ -33,6 +32,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Text Navigation
     Plug 'justinmk/vim-sneak'
     Plug 'unblevable/quick-scope'
+    Plug 'christoomey/vim-tmux-navigator'
     " Plug 'easymotion/vim-easymotion'
     " Add some color
     Plug 'norcalli/nvim-colorizer.lua'
@@ -69,6 +69,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'kjssad/quantum.vim'
     Plug 'Lokaltog/vim-monotone'
     Plug 'Mizux/vim-colorschemes'
+    Plug 'uloco/vim-bluloco-dark'
+    Plug 'challenger-deep-theme/vim', { 'as': 'challenger-deep' }
+
     " Intellisense
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
     " Status Line
@@ -100,8 +103,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'junegunn/goyo.vim'
     " Making stuff
     Plug 'neomake/neomake'
-    " Snippets TODO fix TAB hijack
-    " Plug 'SirVer/ultisnips'
     " Better Comments
     Plug 'jbgutierrez/vim-better-comments'
     " Echo doc
