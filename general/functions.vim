@@ -18,3 +18,14 @@ endfunction
 " augroup strip_ws
 "   autocmd BufWritePre * call utils#stripTrailingWhitespaces()
 " augroup END
+" Toggle transparent background
+let t:is_transparent = 0
+function! ToggleTransparent()
+  if t:is_transparent == 0
+    hi Normal guibg=NONE ctermbg=NONE
+    let t:is_transparent = 1
+  else
+    set background=dark
+    let t:is_tranparent = 0
+  endif
+endfunction

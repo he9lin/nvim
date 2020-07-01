@@ -60,5 +60,9 @@ else
   nnoremap <S-b> :BookmarkToggle<CR>
   nnoremap <S-u> :BookmarkShowAll<CR>
   nnoremap <S-n> :BookmarkNext<CR>
+
+  nnoremap <S-w> :SearchWordUnderCursor<CR>
+  nnoremap <silent> <Leader>x :call ToggleTransparent()<CR>
+  nnoremap g. <C-i>
 endif
 

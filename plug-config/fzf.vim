@@ -15,14 +15,12 @@ map <leader>b :Buffers<CR>
 " nnoremap <leader>t :Tags<CR>
 " nnoremap <leader>m :Marks<CR>
 
-
 let g:fzf_tags_command = 'ctags -R'
 " Border color
 let g:fzf_layout = {'up':'~90%', 'window': { 'width': 0.8, 'height': 0.8,'yoffset':0.5,'xoffset': 0.5, 'highlight': 'Todo', 'border': 'sharp' } }
 
 let $FZF_DEFAULT_OPTS = '--layout=reverse --info=inline'
-let $FZF_DEFAULT_COMMAND="rg --files --hidden --glob '!.git/**'"
-"-g '!{node_modules,.git}'
+let $FZF_DEFAULT_COMMAND='rg --files --hidden --glob "!.git/**"'
 
 " Customize fzf colors to match your color scheme
 let g:fzf_colors =
@@ -40,10 +38,9 @@ let g:fzf_colors =
   \ 'spinner': ['fg', 'Label'],
   \ 'header':  ['fg', 'Comment'] }
 
-"Get Files
+" Get Files
 command! -bang -nargs=? -complete=dir Files
-    \ call fzf#vim#files(<q-args>, fzf#vim#with_preview({'options': ['--layout=reverse', '--info=inline']}), <bang>0)
-
+  \ call fzf#vim#files(<q-args>, fzf#vim#with_preview({'options': ['--layout=reverse', '--info=inline']}), <bang>0)
 
 " Get text in files with Rg
 " command! -bang -nargs=* Rg
@@ -74,3 +71,8 @@ command! -bang -nargs=* GGrep
   \ call fzf#vim#grep(
   \   'git grep --line-number '.shellescape(<q-args>), 0,
   \   fzf#vim#with_preview({'dir': systemlist('git rev-parse --show-toplevel')[0]}), <bang>0)
+
+" Search word under cursor
+command! -bang -nargs=* SearchWordUnderCursor
+  \ call fzf#vim#tags(expand('<cword>'))
+
