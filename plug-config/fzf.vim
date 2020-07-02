@@ -74,5 +74,5 @@ command! -bang -nargs=* GGrep
 
 " Search word under cursor
 command! -bang -nargs=* SearchWordUnderCursor
-  \ call fzf#vim#tags(expand('<cword>'))
+  \ call RipgrepFzf(expand('<cword>'), <bang>0)
 
