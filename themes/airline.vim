@@ -1,8 +1,8 @@
 " enable tabline
 let g:airline#extensions#tabline#enabled = 1
-let g:airline#extensions#tabline#left_sep = '◗'
+let g:airline#extensions#tabline#left_sep = ''
 let g:airline#extensions#tabline#left_alt_sep = '|'
-let g:airline#extensions#tabline#right_sep = '◖'
+let g:airline#extensions#tabline#right_sep = ''
 let g:airline#extensions#tabline#right_alt_sep = '|'
 let g:airline#extensions#tabline#formatter = 'unique_tail_improved'
 
@@ -40,4 +40,4 @@ set noshowmode
 
 " Sections
 " let g:airline_section_c = ''
-let g:webdevicons_enable_airline_tabline = 1
+let g:webdevicons_enable_airline_tabline = 0

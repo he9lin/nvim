@@ -15,7 +15,7 @@ source $HOME/.config/nvim/general/paths.vim
 
 " Source depending on if VSCode is our client
 if exists('g:vscode')
-    " VSCode extension
+  " VSCode extension
   source $HOME/.config/nvim/vscode/windows.vim
   source $HOME/.config/nvim/plug-config/easymotion.vim
 else
@@ -45,18 +45,4 @@ else
   source $HOME/.config/nvim/plug-config/floaterm.vim
   source $HOME/.config/nvim/plug-config/vista.vim
   luafile $HOME/.config/nvim/lua/plug-colorizer.lua
-  " source $HOME/.config/nvim/plug-config/easymotion.vim
 endif
-
-function FSharpFormat()
-  " %!dotnet fantomas %:p --stdout --spaceBeforeColon --indent 2 --pageWidth 80
-  let cmd = "%!dotnet fantomas " . bufname("%") . " --stdout --spaceBeforeColon --indent 2 --pageWidth 80"
-  execute cmd
-endfunction
-
-au FileType fsharp call FileType_FSharp()
-function! FileType_FSharp()
-  if exists("b:did_ftfsharp") | return | endif
-  let b:did_ftfsharp = 1
-  nnoremap <silent> <Leader>p :call FSharpFormat()<CR>
-endfunction
