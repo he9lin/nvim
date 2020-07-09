@@ -110,7 +110,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'MattesGroeger/vim-bookmarks'
     Plug 'Yggdroot/indentLine'
     Plug 'benmills/vimux'
-
+    " Language support
     Plug 'elixir-editors/vim-elixir'
     Plug 'neovimhaskell/haskell-vim'
   endif
