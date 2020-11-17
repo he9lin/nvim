@@ -71,6 +71,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'Mizux/vim-colorschemes'
     Plug 'uloco/vim-bluloco-dark'
     Plug 'challenger-deep-theme/vim', { 'as': 'challenger-deep' }
+    Plug 'rafi/awesome-vim-colorschemes'
 
     " Intellisense
     Plug 'neoclide/coc.nvim', {'branch': 'release'}

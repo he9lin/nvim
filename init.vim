@@ -27,7 +27,6 @@ else
   source $HOME/.config/nvim/themes/airline.vim
   source $HOME/.config/nvim/themes/gruvbox.vim
   source $HOME/.config/nvim/themes/ayu.vim
-  source $HOME/.config/nvim/themes/oceanic_next.vim
   source $HOME/.config/nvim/themes/seoul256.vim
   source $HOME/.config/nvim/themes/sierra.vim
   source $HOME/.config/nvim/plug-config/ranger.vim
@@ -45,4 +44,5 @@ else
   source $HOME/.config/nvim/plug-config/floaterm.vim
   source $HOME/.config/nvim/plug-config/vista.vim
   luafile $HOME/.config/nvim/lua/plug-colorizer.lua
+  source $HOME/.config/nvim/themes/oceanic_next.vim
 endif
