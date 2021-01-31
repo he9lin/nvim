@@ -62,7 +62,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'junegunn/seoul256.vim'
     Plug 'lifepillar/vim-solarized8'
     Plug 'AlessandroYorba/Sierra'
-    Plug 'sonph/onehalf'
+    Plug 'sonph/onehalf', { 'rtp': 'vim' }
+    Plug 'relastle/bluewery.vim'
     Plug 'srcery-colors/srcery-vim'
     Plug 'Nequo/vim-allomancer'
     Plug 'victorze/foo'
