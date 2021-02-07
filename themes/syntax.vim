@@ -14,3 +14,6 @@ if (has('termguicolors'))
   hi LineNr ctermbg=NONE guibg=NONE
 endif
 
+" Neoterm
+set guifont=Monoid:h12.5
+let g:neoterm_default_mod="botright"

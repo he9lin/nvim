@@ -72,6 +72,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'Mizux/vim-colorschemes'
     Plug 'uloco/vim-bluloco-dark'
     Plug 'challenger-deep-theme/vim', { 'as': 'challenger-deep' }
+    Plug 'chiendo97/intellij.vim'
     Plug 'rafi/awesome-vim-colorschemes'
 
     " Intellisense
@@ -95,6 +96,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'kdheepak/lazygit.vim', { 'branch': 'nvim-v0.4.3'  }
     " Terminal
     Plug 'voldikss/vim-floaterm'
+    Plug 'kassio/neoterm'
     " Start Screen
     Plug 'mhinz/vim-startify'
     " Vista
