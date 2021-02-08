@@ -37,7 +37,6 @@ else
   source $HOME/.config/nvim/plug-config/vista.vim
   source $HOME/.config/nvim/themes/two-firewatch.vim
   source $HOME/.config/nvim/themes/material.vim
-  source $HOME/.config/nvim/themes/onedark.vim
   source $HOME/.config/nvim/themes/airline.vim
   source $HOME/.config/nvim/themes/gruvbox.vim
   source $HOME/.config/nvim/themes/ayu.vim

@@ -33,7 +33,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'justinmk/vim-sneak'
     Plug 'unblevable/quick-scope'
     Plug 'christoomey/vim-tmux-navigator'
-    " Plug 'easymotion/vim-easymotion'
     " Add some color
     Plug 'norcalli/nvim-colorizer.lua'
     Plug 'luochen1990/rainbow'
@@ -46,34 +45,21 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Closetags
     Plug 'alvan/vim-closetag'
     " Themes
-    Plug 'joshdick/onedark.vim'
-    Plug 'kaicataldo/material.vim'
-    Plug 'NLKNguyen/papercolor-theme'
-    Plug 'rakr/vim-two-firewatch'
-    Plug 'dracula/vim', { 'as': 'dracula'  }
-    Plug 'morhetz/gruvbox'
     Plug 'ayu-theme/ayu-vim'
-    Plug 'drewtempelmeyer/palenight.vim'
-    Plug 'mhartington/oceanic-next'
-    Plug 'arcticicestudio/nord-vim'
-    Plug 'romainl/Apprentice'
-    Plug 'ajmwagar/vim-deus'
-    Plug 'danilo-augusto/vim-afterglow'
-    Plug 'junegunn/seoul256.vim'
-    Plug 'lifepillar/vim-solarized8'
-    Plug 'AlessandroYorba/Sierra'
-    Plug 'sonph/onehalf', { 'rtp': 'vim' }
-    Plug 'relastle/bluewery.vim'
-    Plug 'srcery-colors/srcery-vim'
-    Plug 'Nequo/vim-allomancer'
-    Plug 'victorze/foo'
-    Plug 'kjssad/quantum.vim'
     Plug 'Lokaltog/vim-monotone'
-    Plug 'Mizux/vim-colorschemes'
-    Plug 'uloco/vim-bluloco-dark'
-    Plug 'challenger-deep-theme/vim', { 'as': 'challenger-deep' }
-    Plug 'chiendo97/intellij.vim'
-    Plug 'rafi/awesome-vim-colorschemes'
+    Plug 'he9lin/awesome-vim-colorschemes'
+    Plug 'he9lin/vim-allomancer'
+    Plug 'he9lin/bluewery.vim'
+    " Plug 'he9lin/material.vim'
+    " Plug 'he9lin/dracula.vim'
+    " Plug 'he9lin/gruvbox'
+    " Plug 'he9lin/vim-solarized8'
+    " Plug 'he9lin/palenight.vim'
+    " Plug 'he9lin/nord-vim'
+    " Plug 'he9lin/seoul256.vim'
+    " Plug 'he9lin/srcery-vim'
+    " Plug 'he9lin/oceanic-next'
+    " Plug 'he9lin/intellij.vim'
 
     " Intellisense
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
