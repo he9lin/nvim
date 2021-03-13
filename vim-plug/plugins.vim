@@ -50,16 +50,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'he9lin/awesome-vim-colorschemes'
     Plug 'he9lin/vim-allomancer'
     Plug 'he9lin/bluewery.vim'
-    " Plug 'he9lin/material.vim'
-    " Plug 'he9lin/dracula.vim'
-    " Plug 'he9lin/gruvbox'
-    " Plug 'he9lin/vim-solarized8'
-    " Plug 'he9lin/palenight.vim'
-    " Plug 'he9lin/nord-vim'
-    " Plug 'he9lin/seoul256.vim'
-    " Plug 'he9lin/srcery-vim'
-    " Plug 'he9lin/oceanic-next'
-    " Plug 'he9lin/intellij.vim'
+    Plug 'he9lin/srcery-vim'
+    Plug 'he9lin/intellij.vim'
+    Plug 'he9lin/darcula'
 
     " Intellisense
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -74,10 +67,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
     Plug 'junegunn/fzf.vim'
     " Git
-    Plug 'mhinz/vim-signify'
     Plug 'airblade/vim-gitgutter'
     Plug 'tpope/vim-fugitive'
-    Plug 'tpope/vim-rhubarb'
     Plug 'junegunn/gv.vim'
     Plug 'kdheepak/lazygit.vim', { 'branch': 'nvim-v0.4.3'  }
     " Terminal
@@ -103,8 +94,11 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Language support
     Plug 'elixir-editors/vim-elixir'
     Plug 'neovimhaskell/haskell-vim'
+    Plug 'fsharp/vim-fsharp', {
+          \ 'for': 'fsharp',
+          \ 'do':  'make fsautocomplete',
+          \}
   endif
-
 
 call plug#end()
 

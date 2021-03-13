@@ -35,14 +35,15 @@ else
   source $HOME/.config/nvim/plug-config/closetags.vim
   source $HOME/.config/nvim/plug-config/floaterm.vim
   source $HOME/.config/nvim/plug-config/vista.vim
+  source $HOME/.config/nvim/themes/airline.vim
   source $HOME/.config/nvim/themes/two-firewatch.vim
   source $HOME/.config/nvim/themes/material.vim
-  source $HOME/.config/nvim/themes/airline.vim
   source $HOME/.config/nvim/themes/gruvbox.vim
   source $HOME/.config/nvim/themes/ayu.vim
   source $HOME/.config/nvim/themes/seoul256.vim
   source $HOME/.config/nvim/themes/sierra.vim
   source $HOME/.config/nvim/themes/dracula.vim
+  source $HOME/.config/nvim/themes/darcula.vim
   source $HOME/.config/nvim/themes/oceanic_next.vim
   luafile $HOME/.config/nvim/lua/plug-colorizer.lua
 endif
