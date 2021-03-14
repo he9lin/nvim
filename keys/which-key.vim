@@ -8,7 +8,6 @@ let g:which_key_map =  {}
 let g:which_key_sep = '→'
 " set timeoutlen=100
 
-
 " Not a fan of floating windows for this
 let g:which_key_use_floating_win = 0
 
@@ -23,35 +22,20 @@ autocmd! FileType which_key
 autocmd  FileType which_key set laststatus=0 noshowmode noruler
   \| autocmd BufLeave <buffer> set laststatus=2 noshowmode ruler
 
-" change to nerd commenter
-" let g:which_key_map['r'] = [ ':Ranger'                    , 'ranger' ]
-let g:which_key_map['r'] = [ ':VimuxRunLastCommand'       , 'run last vimux command' ]
-let g:which_key_map['/'] = [ '<Plug>NERDCommenterToggle'  , 'comment' ]
-let g:which_key_map['.'] = [ ':e $MYVIMRC'                , 'open init' ]
-let g:which_key_map[';'] = [ ':Commands'                  , 'commands' ]
-let g:which_key_map['='] = [ '<C-W>='                     , 'balance windows' ]
-let g:which_key_map['d'] = [ ':bd'                        , 'delete buffer']
-let g:which_key_map['e'] = [ ':CocCommand explorer'       , 'explorer' ]
-let g:which_key_map['f'] = [ ':Files'                     , 'search files' ]
-let g:which_key_map['h'] = [ '<C-W>s'                     , 'split below']
-let g:which_key_map['q'] = [ 'q'                          , 'quit' ]
-let g:which_key_map['S'] = [ ':Startify'                  , 'start screen' ]
-let g:which_key_map['T'] = [ ':Rg'                        , 'search text' ]
-let g:which_key_map['v'] = [ '<C-W>v'                     , 'split right']
-let g:which_key_map['w'] = [ 'w'                          , 'write' ]
-
-let g:which_key_map.b = {
-      \ 'name' : '+buffer' ,
-      \ '1' : ['b1'        , 'buffer 1']        ,
-      \ '2' : ['b2'        , 'buffer 2']        ,
-      \ 'd' : ['bd'        , 'delete-buffer']   ,
-      \ 'f' : ['bfirst'    , 'first-buffer']    ,
-      \ 'h' : ['Startify'  , 'home-buffer']     ,
-      \ 'l' : ['blast'     , 'last-buffer']     ,
-      \ 'n' : ['bnext'     , 'next-buffer']     ,
-      \ 'p' : ['bprevious' , 'previous-buffer'] ,
-      \ '?' : ['Buffers'   , 'fzf-buffer']      ,
-      \ }
+let g:which_key_map['r'] = [ ':VimuxRunLastCommand'     , 'run last vimux command' ]
+let g:which_key_map['/'] = [ '<Plug>NERDCommenterToggle', 'comment' ]
+let g:which_key_map['.'] = [ ':e $MYVIMRC'              , 'open init' ]
+let g:which_key_map[';'] = [ ':Commands'                , 'commands' ]
+let g:which_key_map['='] = [ '<C-W>='                   , 'balance windows' ]
+let g:which_key_map['d'] = [ ':bd'                      , 'delete buffer']
+let g:which_key_map['e'] = [ ':CocCommand explorer'     , 'explorer' ]
+let g:which_key_map['f'] = [ ':Files'                   , 'search files' ]
+let g:which_key_map['h'] = [ '<C-W>s'                   , 'split below']
+let g:which_key_map['q'] = [ 'q'                        , 'quit' ]
+let g:which_key_map['S'] = [ ':Startify'                , 'start screen' ]
+let g:which_key_map['T'] = [ ':Rg'                      , 'search text' ]
+let g:which_key_map['v'] = [ '<C-W>v'                   , 'split right']
+let g:which_key_map['w'] = [ 'w'                        , 'write' ]
 
 " s is for search
 let g:which_key_map.s = {
@@ -147,7 +131,6 @@ let g:which_key_map.l = {
       \ 'Z' : [':CocEnable'                          , 'enable CoC'],
       \ }
 
-
 " t is for toggle
 let g:which_key_map.t = {
       \ 'name' : '+toggle' ,
@@ -162,5 +145,3 @@ let g:which_key_map.t = {
 
 " Register which key map
 call which_key#register('<Space>', "g:which_key_map")
-
-
