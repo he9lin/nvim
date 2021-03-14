@@ -27,14 +27,14 @@ else
   source $HOME/.config/nvim/plug-config/rainbow.vim
   source $HOME/.config/nvim/plug-config/quickscope.vim
   source $HOME/.config/nvim/plug-config/sneak.vim
-  source $HOME/.config/nvim/plug-config/coc.vim
+  source ~/.config/nvim/plug-config/nvimtree-config.vim
+  " source $HOME/.config/nvim/plug-config/coc.vim
   source $HOME/.config/nvim/plug-config/vim-rooter.vim
   source $HOME/.config/nvim/plug-config/start-screen.vim
   source $HOME/.config/nvim/plug-config/gitgutter.vim
   source $HOME/.config/nvim/plug-config/closetags.vim
   source $HOME/.config/nvim/plug-config/floaterm.vim
   source $HOME/.config/nvim/plug-config/vista.vim
-  source $HOME/.config/nvim/themes/airline.vim
   source $HOME/.config/nvim/themes/two-firewatch.vim
   source $HOME/.config/nvim/themes/material.vim
   source $HOME/.config/nvim/themes/gruvbox.vim
@@ -44,5 +44,25 @@ else
   source $HOME/.config/nvim/themes/dracula.vim
   source $HOME/.config/nvim/themes/darcula.vim
   source $HOME/.config/nvim/themes/oceanic_next.vim
-  luafile $HOME/.config/nvim/lua/plug-colorizer.lua
+  source ~/.config/nvim/plug-config/lsp-saga.vim
+  source ~/.config/nvim/lua/lsp-wrapper.vim
+  luafile ~/.config/nvim/lua/plugins/colorizer-config.lua
+  luafile ~/.config/nvim/lua/plugins/compe-config.lua
+  " LSP
+  source ~/.config/nvim/plug-config/lsp-config.vim
+  luafile ~/.config/nvim/lua/lsp/general-ls.lua
+  luafile ~/.config/nvim/lua/lsp/vim-ls.lua
+  luafile ~/.config/nvim/lua/lsp/lsp-config.lua
+  luafile ~/.config/nvim/lua/lsp/elixir-ls.lua
 endif
+
+" TODO highlight groups for native LSP diagnostics
+" add back other docs for compe
+nnoremap <silent> K <cmd>lua require('lspsaga.hover').render_hover_doc()<CR>
+
+" -- scroll down hover doc or scroll in definition preview
+nnoremap <silent> <C-f> <cmd>lua require('lspsaga.action').smart_scroll_with_saga(1)<CR>
+" -- scroll up hover doc
+nnoremap <silent> <C-b> <cmd>lua require('lspsaga.action').smart_scroll_with_saga(-1)<CR>
+" signature
+nnoremap <silent> gs <cmd>lua require('lspsaga.signaturehelp').signature_help()<CR>

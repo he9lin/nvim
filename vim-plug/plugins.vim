@@ -36,8 +36,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Add some color
     Plug 'norcalli/nvim-colorizer.lua'
     Plug 'luochen1990/rainbow'
-    " Better Syntax Support
-    Plug 'sheerun/vim-polyglot'
     " Cool Icons
     Plug 'ryanoasis/vim-devicons'
     " Auto pairs for '(' '[' '{'
@@ -49,16 +47,15 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'Lokaltog/vim-monotone'
     Plug 'he9lin/awesome-vim-colorschemes'
     Plug 'he9lin/vim-allomancer'
-    Plug 'he9lin/bluewery.vim'
     Plug 'he9lin/srcery-vim'
     Plug 'he9lin/intellij.vim'
     Plug 'he9lin/darcula'
-
-    " Intellisense
-    Plug 'neoclide/coc.nvim', {'branch': 'release'}
+    " File Explorer
+    Plug 'kyazdani42/nvim-web-devicons' " for file icons
+    Plug 'kyazdani42/nvim-tree.lua'
     " Status Line
-    Plug 'vim-airline/vim-airline'
-    Plug 'vim-airline/vim-airline-themes'
+    " Plug 'vim-airline/vim-airline'
+    " Plug 'vim-airline/vim-airline-themes'
     " Ranger
     Plug 'francoiscabrol/ranger.vim'
     Plug 'rbgrouleff/bclose.vim'
@@ -69,27 +66,23 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'airblade/vim-gitgutter'
     Plug 'tpope/vim-fugitive'
     Plug 'junegunn/gv.vim'
-    Plug 'kdheepak/lazygit.vim', { 'branch': 'nvim-v0.4.3'  }
-    " Terminal
-    Plug 'voldikss/vim-floaterm'
-    Plug 'kassio/neoterm'
+    Plug 'kdheepak/lazygit.vim'
     " Start Screen
     Plug 'mhinz/vim-startify'
-    " Vista
     " See what keys do like in emacs
     Plug 'liuchengxu/vim-which-key'
-    " Zen mode
-    Plug 'junegunn/goyo.vim'
-    " Making stuff
-    Plug 'neomake/neomake'
     " Better Comments
     Plug 'jbgutierrez/vim-better-comments'
-    " Echo doc
-    " Plug 'Shougo/echodoc.vim'
     Plug 'MattesGroeger/vim-bookmarks'
     Plug 'Yggdroot/indentLine'
     Plug 'benmills/vimux'
+    " Intellisense
+    Plug 'neovim/nvim-lspconfig'
+    Plug 'anott03/nvim-lspinstall'
+    Plug 'hrsh7th/nvim-compe'
+    Plug 'glepnir/lspsaga.nvim'
     " Language support
+    Plug 'sheerun/vim-polyglot'
     Plug 'elixir-editors/vim-elixir'
     Plug 'neovimhaskell/haskell-vim'
     Plug 'fsharp/vim-fsharp', {
