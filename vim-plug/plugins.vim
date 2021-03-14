@@ -36,8 +36,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Add some color
     Plug 'norcalli/nvim-colorizer.lua'
     Plug 'luochen1990/rainbow'
-    " Better Syntax Support
-    Plug 'sheerun/vim-polyglot'
     " Cool Icons
     Plug 'ryanoasis/vim-devicons'
     " Auto pairs for '(' '[' '{'
@@ -49,13 +47,12 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'Lokaltog/vim-monotone'
     Plug 'he9lin/awesome-vim-colorschemes'
     Plug 'he9lin/vim-allomancer'
-    Plug 'he9lin/bluewery.vim'
     Plug 'he9lin/srcery-vim'
     Plug 'he9lin/intellij.vim'
     Plug 'he9lin/darcula'
 
     " Intellisense
-    Plug 'neoclide/coc.nvim', {'branch': 'release'}
+    Plug 'neoclide/coc.nvim', { 'branch': 'release' }
     " Status Line
     Plug 'vim-airline/vim-airline'
     Plug 'vim-airline/vim-airline-themes'
@@ -69,27 +66,23 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'airblade/vim-gitgutter'
     Plug 'tpope/vim-fugitive'
     Plug 'junegunn/gv.vim'
-    Plug 'kdheepak/lazygit.vim', { 'branch': 'nvim-v0.4.3'  }
+    Plug 'kdheepak/lazygit.vim', { 'branch': 'nvim-v0.4.3' }
     " Terminal
-    Plug 'voldikss/vim-floaterm'
     Plug 'kassio/neoterm'
     " Start Screen
     Plug 'mhinz/vim-startify'
-    " Vista
     " See what keys do like in emacs
     Plug 'liuchengxu/vim-which-key'
     " Zen mode
     Plug 'junegunn/goyo.vim'
-    " Making stuff
+    " Asynchronously run programs
     Plug 'neomake/neomake'
-    " Better Comments
-    Plug 'jbgutierrez/vim-better-comments'
-    " Echo doc
-    " Plug 'Shougo/echodoc.vim'
+    " Better editing
     Plug 'MattesGroeger/vim-bookmarks'
     Plug 'Yggdroot/indentLine'
     Plug 'benmills/vimux'
     " Language support
+    Plug 'sheerun/vim-polyglot'
     Plug 'elixir-editors/vim-elixir'
     Plug 'neovimhaskell/haskell-vim'
     Plug 'fsharp/vim-fsharp', {
