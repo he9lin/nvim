@@ -73,8 +73,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'mhinz/vim-startify'
     " See what keys do like in emacs
     Plug 'liuchengxu/vim-which-key'
-    " Zen mode
-    Plug 'junegunn/goyo.vim'
     " Asynchronously run programs
     Plug 'neomake/neomake'
     " Better editing
