@@ -53,6 +53,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
     " Intellisense
     Plug 'neoclide/coc.nvim', { 'branch': 'release' }
+    Plug 'honza/vim-snippets'
     " Status Line
     Plug 'vim-airline/vim-airline'
     Plug 'vim-airline/vim-airline-themes'
