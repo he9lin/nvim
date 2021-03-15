@@ -28,7 +28,6 @@ else
   source $HOME/.config/nvim/plug-config/quickscope.vim
   source $HOME/.config/nvim/plug-config/sneak.vim
   source ~/.config/nvim/plug-config/nvimtree-config.vim
-  " source $HOME/.config/nvim/plug-config/coc.vim
   source $HOME/.config/nvim/plug-config/vim-rooter.vim
   source $HOME/.config/nvim/plug-config/start-screen.vim
   source $HOME/.config/nvim/plug-config/gitgutter.vim
@@ -44,13 +43,15 @@ else
   source $HOME/.config/nvim/themes/dracula.vim
   source $HOME/.config/nvim/themes/darcula.vim
   source $HOME/.config/nvim/themes/oceanic_next.vim
-  source ~/.config/nvim/plug-config/lsp-saga.vim
-  source ~/.config/nvim/lua/lsp-wrapper.vim
+  luafile ~/.config/nvim/lua/plugins/tree-sitter-config.lua
   luafile ~/.config/nvim/lua/plugins/colorizer-config.lua
   luafile ~/.config/nvim/lua/plugins/compe-config.lua
   " LSP
+  source ~/.config/nvim/plug-config/lsp-saga.vim
   source ~/.config/nvim/plug-config/lsp-config.vim
+  source ~/.config/nvim/lua/lsp-wrapper.vim
   luafile ~/.config/nvim/lua/lsp/general-ls.lua
+  luafile ~/.config/nvim/lua/lsp/lua-ls.lua
   luafile ~/.config/nvim/lua/lsp/vim-ls.lua
   luafile ~/.config/nvim/lua/lsp/lsp-config.lua
   luafile ~/.config/nvim/lua/lsp/elixir-ls.lua

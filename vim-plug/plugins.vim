@@ -82,8 +82,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'hrsh7th/nvim-compe'
     Plug 'glepnir/lspsaga.nvim'
     " Language support
-    Plug 'sheerun/vim-polyglot'
-    Plug 'elixir-editors/vim-elixir'
+    Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+    Plug 'Tuxified/tree-sitter-elixir'
     Plug 'neovimhaskell/haskell-vim'
     Plug 'fsharp/vim-fsharp', {
           \ 'for': 'fsharp',
