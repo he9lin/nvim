@@ -33,9 +33,10 @@ let g:which_key_map['f'] = [ ':Files'                   , 'search files' ]
 let g:which_key_map['h'] = [ '<C-W>s'                   , 'split below']
 let g:which_key_map['q'] = [ 'q'                        , 'quit' ]
 let g:which_key_map['S'] = [ ':Startify'                , 'start screen' ]
-let g:which_key_map['T'] = [ ':Rg'                      , 'search text' ]
+let g:which_key_map['t'] = [ ':Rg'                      , 'search text' ]
 let g:which_key_map['v'] = [ '<C-W>v'                   , 'split right']
 let g:which_key_map['w'] = [ 'w'                        , 'write' ]
+let g:which_key_map['x'] = [ ':let @/ = ""'             , 'remove search highlights' ]
 
 " s is for search
 let g:which_key_map.s = {
@@ -131,16 +132,17 @@ let g:which_key_map.l = {
       \ 'Z' : [':CocEnable'                          , 'enable CoC'],
       \ }
 
-" t is for toggle
-let g:which_key_map.t = {
+" T is for toggle
+let g:which_key_map.T = {
       \ 'name' : '+toggle' ,
-      \ 'c' : [':ColorizerToggle'        , 'colorizer'],
-      \ 'e' : [':CocCommand explorer'    , 'explorer'],
-      \ 'n' : [':set nonumber!'          , 'line-numbers'],
-      \ 'r' : [':set norelativenumber!'  , 'relative line nums'],
-      \ 's' : [':let @/ = ""'            , 'remove search highlight'],
-      \ 't' : [':FloatermToggle'         , 'terminal'],
-      \ 'v' : [':Vista!!'                , 'tag viewer'],
+      \ 'c' : [':ColorizerToggle'         , 'colorizer'],
+      \ 'e' : [':CocCommand explorer'     , 'explorer'],
+      \ 'n' : [':set nonumber!'           , 'line-numbers'],
+      \ 'p' : [':call ToggleTransparent()', 'toogle theme transparency'],
+      \ 'r' : [':set norelativenumber!'   , 'relative line nums'],
+      \ 's' : [':let @/ = ""'             , 'remove search highlight'],
+      \ 't' : [':FloatermToggle'          , 'terminal'],
+      \ 'v' : [':Vista!!'                 , 'tag viewer'],
       \ }
 
 " Register which key map

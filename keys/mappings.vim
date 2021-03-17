@@ -62,7 +62,6 @@ else
   nnoremap <S-n> :BookmarkNext<CR>
 
   nnoremap <S-w> :SearchWordUnderCursor<CR>
-  nnoremap <silent> <Leader>x :call ToggleTransparent()<CR>
 
   " Fix cursor jump
   nnoremap g. <C-i>
