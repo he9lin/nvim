@@ -39,8 +39,8 @@ else
   source $HOME/.config/nvim/themes/ayu.vim
   source $HOME/.config/nvim/themes/seoul256.vim
   source $HOME/.config/nvim/themes/sierra.vim
-  source $HOME/.config/nvim/themes/dracula.vim
   source $HOME/.config/nvim/themes/darcula.vim
   source $HOME/.config/nvim/themes/oceanic_next.vim
+  source $HOME/.config/nvim/themes/dracula.vim
   luafile $HOME/.config/nvim/lua/plug-colorizer.lua
 endif

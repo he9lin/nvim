@@ -35,10 +35,9 @@ if !exists('g:vscode')
   set timeoutlen=100                      " By default timeoutlen is 1000 ms
   set clipboard=unnamedplus               " Copy paste between vim and everything else
   set incsearch
-  " let $NVIM_TUI_ENABLE_TRUE_COLOR=1
   set mmp=5000
-  " set autochdir                           " Your working directory will always be the same as your working directory
-  " set foldcolumn=2                        " Folding abilities
+
+  " let $NVIM_TUI_ENABLE_TRUE_COLOR=1
 
   " au! BufWritePost $MYVIMRC source %      " auto source when writing to init.vm alternatively you can run :source $MYVIMRC
   autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
@@ -53,3 +52,10 @@ if !exists('g:vscode')
   cmap w!! w !sudo tee %
 endif
 
+if exists('g:fvim_loaded')
+  set guifont=BlexMono\ NF:h16
+
+  " Ctrl-ScrollWheel for zooming in/out
+  nnoremap <silent> <C-ScrollWheelUp> :set guifont=+<CR>
+  nnoremap <silent> <C-ScrollWheelDown> :set guifont=-<CR>
+endif

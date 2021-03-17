@@ -50,6 +50,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'he9lin/srcery-vim'
     Plug 'he9lin/intellij.vim'
     Plug 'he9lin/darcula'
+    Plug 'he9lin/dracula.vim', { 'name': 'dracula' }
 
     " Intellisense
     Plug 'neoclide/coc.nvim', { 'branch': 'release' }
