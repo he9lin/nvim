@@ -11,7 +11,7 @@ function! FileType_Elixir()
   map <Leader>i :call VimuxRunCommand("mix test " . bufname("%") . ":" . line("."))<CR>
   map <Leader>m :call VimuxRunCommand("mix test " . bufname("%"))<CR>
   map <Leader>n :call VimuxRunCommand("mix test")<CR>
-  syntax enable
+  map <Leader>r :call VimuxRunLastCommand()<CR>
 endfunction
 
 " Remove trailing whitespaces automatically before save

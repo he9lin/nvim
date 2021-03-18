@@ -85,10 +85,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'sheerun/vim-polyglot'
     Plug 'elixir-editors/vim-elixir'
     Plug 'neovimhaskell/haskell-vim'
-    Plug 'fsharp/vim-fsharp', {
-          \ 'for': 'fsharp',
-          \ 'do':  'make fsautocomplete',
-          \}
   endif
 
 call plug#end()
